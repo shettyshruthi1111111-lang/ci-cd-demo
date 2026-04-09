@@ -417,3 +417,24 @@ apt init -y
 nano index.js
 sudo su -
 exit
+nano pod.yml
+kubectl apply -f pod.yaml
+kubectl apply -f pod.yml
+kubectl get pods
+clear
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin
+git remote add origin https://github.com/shettyshruthi1111111-lang/ci-cd-demo.git
+git push -u origin main
+echo "New line" >> README.md
+git add README.md
+git commit -m "Test webhook trigger"
+git push origin main
+mkdir node-docker-app
+cd node-docker-app
+nano index.js
+nano Dockerfile
+docker build -t my-node-app .
